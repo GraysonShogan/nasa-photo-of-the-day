@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-// https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
 function App() {
   const [picture, setPicture] = useState("");
   const [caption, setCaption] = useState("");
@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <h1>NASA Image of the day!</h1>
       <div className="image">
-        <img src={picture} alt="NASA" />
+        <img src={picture} alt="NASA picture of the day!" />
       </div>
       <div className="caption">
         <p>{caption}</p>
